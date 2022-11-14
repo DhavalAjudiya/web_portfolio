@@ -8,8 +8,8 @@ import 'package:responsive_framework/responsive_framework.dart';
 final List<Stat> stats = [
   // Stat(count: "43", text: "Clients"),
   Stat(count: "5+", text: "Projects"),
-  Stat(count: "4", text: "Awards"),
-  Stat(count: "1", text: "Years\nExperience"),
+  Stat(count: "2", text: "Awards"),
+  Stat(count: "1.5+", text: "Years\nExperience"),
 ];
 
 class PortfolioStats extends StatelessWidget {
@@ -40,9 +40,7 @@ class PortfolioStats extends StatelessWidget {
                 return Container(
                   padding: const EdgeInsets.symmetric(vertical: 15.0),
                   // Just use the helper here really
-                  width: ScreenHelper.isMobile(context)
-                      ? constraint.maxWidth / 2.0 - 20
-                      : (constraint.maxWidth / 4.0 - 20),
+                  width: ScreenHelper.isMobile(context) ? constraint.maxWidth / 2.0 - 20 : (constraint.maxWidth / 4.0 - 20),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

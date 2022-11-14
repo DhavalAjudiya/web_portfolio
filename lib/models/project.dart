@@ -27,8 +27,7 @@ class ProjectModel {
     ProjectModel(
       project: "Flutter App",
       title: "Smart Store App",
-      description:
-          "The Idea came during the pandemics to solve the issue of social distancing in supermarkets.",
+      description: "The Idea came during the pandemics to solve the issue of social distancing in supermarkets.",
       appPhotos: AppConstants.smartStoreImage,
       projectLink: "https://github.com/AgnelSelvan/Smart-Store-Mobile-App",
       techUsed: [
@@ -55,8 +54,7 @@ class ProjectModel {
     ProjectModel(
       project: "Flutter App",
       title: "News Up App",
-      description:
-          "This application is used basically for viewing different news. Launched the app in Amazon AppStore",
+      description: "This application is used basically for viewing different news. Launched the app in Amazon AppStore",
       appPhotos: AppConstants.newsUpImage,
       projectLink: "https://www.amazon.com/gp/product/B08669JDX7",
       techUsed: [
@@ -66,8 +64,7 @@ class ProjectModel {
     ProjectModel(
       project: "Flutter App",
       title: "Music Lab",
-      description:
-          "A Simple Music Player App. Launched the app in Amazon AppStore",
+      description: "A Simple Music Player App. Launched the app in Amazon AppStore",
       appPhotos: AppConstants.musicLabImage,
       projectLink: "https://www.amazon.com/gp/product/B08WL2XFGW",
       techUsed: [
@@ -89,8 +86,7 @@ class ProjectModel {
     ProjectModel(
       project: "Python",
       title: "Personal Face and Emotion Recognition",
-      description:
-          "The model will recognize each face and identify their name based on the trained model. CNN is used for training the dataset.",
+      description: "The model will recognize each face and identify their name based on the trained model. CNN is used for training the dataset.",
       appPhotos: AppConstants.personalFaceImage,
       projectLink: "https://github.com/AgnelSelvan/Emotion-Recognition.git",
       techUsed: [

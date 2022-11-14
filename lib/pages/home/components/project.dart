@@ -51,19 +51,13 @@ class ProjectSection extends StatelessWidget {
               return Container(
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                    color: ref.watch(themeProvider).isDarkMode
-                        ? const Color.fromARGB(75, 12, 12, 7)
-                        : Colors.grey[100],
+                    color: ref.watch(themeProvider).isDarkMode ? const Color.fromARGB(75, 12, 12, 7) : Colors.grey[100],
                     borderRadius: BorderRadius.circular(5)),
                 child: Flex(
-                  direction: ScreenHelper.isMobile(context)
-                      ? Axis.vertical
-                      : Axis.horizontal,
+                  direction: ScreenHelper.isMobile(context) ? Axis.vertical : Axis.horizontal,
                   children: [
                     SizedBox(
-                      width: ScreenHelper.isMobile(context)
-                          ? width * 0.9
-                          : width * 0.46,
+                      width: ScreenHelper.isMobile(context) ? width * 0.9 : width * 0.46,
                       child: Image.asset(
                         projectModel.appPhotos,
                         width: constraints.maxWidth > 720.0 ? null : 350.0,
@@ -76,9 +70,7 @@ class ProjectSection extends StatelessWidget {
                       height: 20,
                     ),
                     SizedBox(
-                      width: ScreenHelper.isMobile(context)
-                          ? width * 0.9
-                          : width * 0.45,
+                      width: ScreenHelper.isMobile(context) ? width * 0.9 : width * 0.45,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -130,10 +122,7 @@ class ProjectSection extends StatelessWidget {
                                 .map((e) => Container(
                                       margin: const EdgeInsets.all(10),
                                       width: 25,
-                                      color:
-                                          e.logo == AppConstants.razorPayImage
-                                              ? Colors.white
-                                              : null,
+                                      color: e.logo == AppConstants.razorPayImage ? Colors.white : null,
                                       height: 25,
                                       child: Image.asset(e.logo),
                                     ))
@@ -161,9 +150,7 @@ class ProjectSection extends StatelessWidget {
                                     },
                                     child: Center(
                                       child: Text(
-                                        (projectModel.buttonText ??
-                                                "Explore MORE")
-                                            .toUpperCase(),
+                                        (projectModel.buttonText ?? "Explore MORE").toUpperCase(),
                                         style: const TextStyle(
                                           fontSize: 13.0,
                                           fontWeight: FontWeight.bold,

@@ -23,11 +23,9 @@ class MyApp extends StatelessWidget {
     return Consumer(
       builder: (context, ref, _) {
         return ThemeProvider(
-          initTheme: ref.watch(themeProvider).isDarkMode
-              ? MyThemes.darkTheme
-              : MyThemes.lightTheme,
+          initTheme: ref.watch(themeProvider).isDarkMode ? MyThemes.darkTheme : MyThemes.lightTheme,
           child: MaterialApp(
-            title: "Agnel Selvan",
+            title: "Dhaval Ajudiya",
             debugShowCheckedModeBanner: false,
             themeMode: ref.watch(themeProvider).themeMode,
             theme: MyThemes.lightTheme,

@@ -36,11 +36,11 @@ class ServiceSection extends StatelessWidget {
       iconData: Icons.mobile_friendly,
       color: Colors.green[400]!,
     ),
-    NameIconColor(
-      title: "Web Development",
-      iconData: Icons.web,
-      color: Colors.yellow[400]!,
-    ),
+    // NameIconColor(
+    //   title: "Web Development",
+    //   iconData: Icons.web,
+    //   color: Colors.yellow[400]!,
+    // ),
     NameIconColor(
       title: "Technical Blog Writer",
       iconData: Icons.article,
@@ -85,23 +85,22 @@ class ServiceSection extends StatelessWidget {
                   fontSize: 18.0,
                 ),
               ),
-              GestureDetector(
-                onTap: () {
-                  Utilty.openUrl(
-                      "https://github.com/AgnelSelvan/AgnelSelvan.github.io/raw/main/assets/files/Agnel-Selvan.pdf");
-                },
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: Text(
-                    "DOWNLOAD CV",
-                    style: GoogleFonts.josefinSans(
-                      color: kPrimaryColor,
-                      fontWeight: FontWeight.w900,
-                      fontSize: 16.0,
-                    ),
-                  ),
-                ),
-              ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Utilty.openUrl("https://github.com/AgnelSelvan/AgnelSelvan.github.io/raw/main/assets/files/Agnel-Selvan.pdf");
+              //   },
+              //   child: MouseRegion(
+              //     cursor: SystemMouseCursors.click,
+              //     child: Text(
+              //       "DOWNLOAD CV",
+              //       style: GoogleFonts.josefinSans(
+              //         color: kPrimaryColor,
+              //         fontWeight: FontWeight.w900,
+              //         fontSize: 16.0,
+              //       ),
+              //     ),
+              //   ),
+              // ),
             ],
           ),
           const SizedBox(
@@ -139,9 +138,7 @@ class ServiceSection extends StatelessWidget {
                           width: 200,
                           margin: const EdgeInsets.all(20),
                           decoration: BoxDecoration(
-                            color: ref.watch(themeProvider).isDarkMode
-                                ? const Color.fromARGB(75, 12, 12, 7)
-                                : Colors.grey[50],
+                            color: ref.watch(themeProvider).isDarkMode ? const Color.fromARGB(75, 12, 12, 7) : Colors.grey[50],
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: Column(
@@ -152,9 +149,7 @@ class ServiceSection extends StatelessWidget {
                                 width: 80,
                                 height: 80,
                                 decoration: BoxDecoration(
-                                  color: ref.watch(themeProvider).isDarkMode
-                                      ? Colors.grey[900]
-                                      : Colors.grey[200],
+                                  color: ref.watch(themeProvider).isDarkMode ? Colors.grey[900] : Colors.grey[200],
                                   borderRadius: BorderRadius.circular(80),
                                 ),
                                 child: Icon(
@@ -170,9 +165,7 @@ class ServiceSection extends StatelessWidget {
                                 e.title,
                                 textAlign: TextAlign.center,
                                 style: GoogleFonts.josefinSans(
-                                  color: ref.watch(themeProvider).isDarkMode
-                                      ? Colors.grey[400]
-                                      : Colors.grey[800],
+                                  color: ref.watch(themeProvider).isDarkMode ? Colors.grey[400] : Colors.grey[800],
                                   fontSize: 20,
                                   fontWeight: FontWeight.w800,
                                 ),

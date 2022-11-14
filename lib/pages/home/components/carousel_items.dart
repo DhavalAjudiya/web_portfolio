@@ -6,8 +6,7 @@ import 'package:my_portfolio/utils/utils.dart';
 
 import '../../../models/carousel_item_model.dart';
 
-List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
-    List.generate(
+List<CarouselItemModel> carouselItems(double carouselContainerHeight) => List.generate(
       5,
       (index) => CarouselItemModel(
         text: SizedBox(
@@ -21,7 +20,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "Mobile Application Developer",
+                      "Flutter Developer",
                       style: GoogleFonts.josefinSans(
                         color: kPrimaryColor,
                         fontWeight: FontWeight.w900,
@@ -33,7 +32,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                       height: 18.0,
                     ),
                     Text(
-                      "Agnel Selvan".toUpperCase(),
+                      "Dhaval Ajudiya".toUpperCase(),
                       style: GoogleFonts.josefinSans(
                         fontSize: 40.0,
                         fontWeight: FontWeight.w900,
@@ -66,7 +65,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                           width: 2,
                         ),
                         Text(
-                          "Mumbai",
+                          "Surat",
                           style: TextStyle(
                             color: kCaptionColor,
                             fontSize: 15.0,
@@ -132,8 +131,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
           ),
         ),
         image: Container(
-          child:
-              SvgPicture.asset(AppConstants.guySvg, semanticsLabel: 'Guy Logo'),
+          child: SvgPicture.asset(AppConstants.guySvg, semanticsLabel: 'Guy Logo'),
         ),
       ),
     );
